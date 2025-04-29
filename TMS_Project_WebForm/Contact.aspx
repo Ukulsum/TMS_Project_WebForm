@@ -58,13 +58,14 @@
                 <div class="col-md-6 form-group">
                   <%--<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />--%>
                     <asp:TextBox ID="NameTextBox" class="form-control" placeholder="Your Name" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ControlToValidate="NameTextBox" ForeColor="Red" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Name is Required" ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ControlToValidate="NameTextBox" ForeColor="Red" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Name is Required" ID="RequiredFieldValidator1" runat="server"></asp:RequiredFieldValidator>
                   <%--<div class="validate"></div>--%>
                 </div>
                 <div class="col-md-6 form-group">
                   <%--<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />--%>
                     <asp:TextBox ID="EmailTextBox" class="form-control" placeholder="Your Email" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ControlToValidate="EmailTextBox" ForeColor="Red" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Email is Required" ID="RequiredFieldValidator2" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <%--<asp:RequiredFieldValidator ControlToValidate="EmailTextBox" ForeColor="Red" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Email is Required" ID="RequiredFieldValidator2" runat="server" ></asp:RequiredFieldValidator>--%>
+                    <asp:RegularExpressionValidator ControlToValidate="EmailTextBox" ForeColor="Red" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Invalid Email" ID="RegularExpressionValidator1" runat="server" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ></asp:RegularExpressionValidator>
                   <%--<div class="validate"></div>--%>
                 </div>
               </div>
@@ -77,13 +78,13 @@
                       <asp:ListItem>Feedback</asp:ListItem>
                       <asp:ListItem>Complain</asp:ListItem>
                   </asp:DropDownList>
-                  <asp:RequiredFieldValidator ControlToValidate="SubjectDropDownList" InitialValue="Select" ForeColor="Red" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Subject is Required" ID="RequiredFieldValidator3" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                  <asp:RequiredFieldValidator ControlToValidate="SubjectDropDownList" InitialValue="Select" ForeColor="Red" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Subject is Required" ID="RequiredFieldValidator3" runat="server"></asp:RequiredFieldValidator>
                 <%--<div class="validate"></div>--%>
               </div>
               <div class="form-group">
                 <%--<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>--%>
                   <asp:TextBox ID="MessageTextBox" TextMode="MultiLine" Columns="8" Rows="7" class="form-control" placeholder="Your Message" runat="server"></asp:TextBox>
-                  <asp:RequiredFieldValidator ControlToValidate="MessageTextBox" ForeColor="Red" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Message is Required" ID="RequiredFieldValidator4" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                  <asp:RequiredFieldValidator ControlToValidate="MessageTextBox" ForeColor="Red" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Message is Required" ID="RequiredFieldValidator4" runat="server"></asp:RequiredFieldValidator>
                   
                 <%--<div class="validate"></div>--%>
               </div>
