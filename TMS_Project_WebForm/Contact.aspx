@@ -95,7 +95,7 @@
               </div>--%>
               <div class="text-center">
                   <%--<button type="submit">Send Message</button>--%>
-                <asp:Button CssClass="btn btn-info" ID="SubmitButton" runat="server" Text="Submit" />
+                <asp:Button CssClass="btn btn-info" ID="SubmitButton" runat="server" Text="Submit" OnClick="SubmitButton_Click" />
               </div>
             </form>
           </div>
