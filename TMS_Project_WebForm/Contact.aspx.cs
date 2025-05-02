@@ -39,12 +39,15 @@ namespace TMS_Project_WebForm
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                Response.Write("<script>alert('Form Has been Submited Successfully.')</script>");
+                //Response.Write("<script>alert('Form Has been Submited Successfully.')</script>");
+                //Response.Write("<script>SuccessContact();</script>");
+                ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "SuccessContact();", true);
                 ResetContact();
             }
             else
             {
-                Response.Write("<script>alert('Form Insertion Failed.')</script>");
+                //Response.Write("<script>alert('Form Insertion Failed.')</script>");
+                ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "ErrorContact();", true);
             }
             con.Close();
         }

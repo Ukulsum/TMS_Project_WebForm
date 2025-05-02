@@ -68,8 +68,57 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Admin\AdminIndex.aspx" />
+    <Content Include="Admin\admin_dashboard\.gitignore" />
+    <Content Include="Admin\admin_dashboard\dist\401.html" />
+    <Content Include="Admin\admin_dashboard\dist\404.html" />
+    <Content Include="Admin\admin_dashboard\dist\500.html" />
+    <Content Include="Admin\admin_dashboard\dist\assets\demo\chart-area-demo.js" />
+    <Content Include="Admin\admin_dashboard\dist\assets\demo\chart-bar-demo.js" />
+    <Content Include="Admin\admin_dashboard\dist\assets\demo\chart-pie-demo.js" />
+    <Content Include="Admin\admin_dashboard\dist\assets\demo\datatables-demo.js" />
+    <Content Include="Admin\admin_dashboard\dist\assets\img\error-404-monochrome.svg" />
+    <Content Include="Admin\admin_dashboard\dist\charts.html" />
+    <Content Include="Admin\admin_dashboard\dist\css\styles.css" />
+    <Content Include="Admin\admin_dashboard\dist\index.html" />
+    <Content Include="Admin\admin_dashboard\dist\js\scripts.js" />
+    <Content Include="Admin\admin_dashboard\dist\layout-sidenav-light.html" />
+    <Content Include="Admin\admin_dashboard\dist\layout-static.html" />
+    <Content Include="Admin\admin_dashboard\dist\login.html" />
+    <Content Include="Admin\admin_dashboard\dist\password.html" />
+    <Content Include="Admin\admin_dashboard\dist\register.html" />
+    <Content Include="Admin\admin_dashboard\dist\tables.html" />
+    <Content Include="Admin\admin_dashboard\index.html" />
+    <Content Include="Admin\admin_dashboard\scripts\build-assets.js" />
+    <Content Include="Admin\admin_dashboard\scripts\build-pug.js" />
+    <Content Include="Admin\admin_dashboard\scripts\build-scripts.js" />
+    <Content Include="Admin\admin_dashboard\scripts\build-scss.js" />
+    <Content Include="Admin\admin_dashboard\scripts\clean.js" />
+    <Content Include="Admin\admin_dashboard\scripts\render-assets.js" />
+    <Content Include="Admin\admin_dashboard\scripts\render-pug.js" />
+    <Content Include="Admin\admin_dashboard\scripts\render-scripts.js" />
+    <Content Include="Admin\admin_dashboard\scripts\render-scss.js" />
+    <Content Include="Admin\admin_dashboard\scripts\sb-watch.js" />
+    <Content Include="Admin\admin_dashboard\scripts\start-debug.js" />
+    <Content Include="Admin\admin_dashboard\scripts\start.js" />
+    <Content Include="Admin\admin_dashboard\src\assets\demo\chart-area-demo.js" />
+    <Content Include="Admin\admin_dashboard\src\assets\demo\chart-bar-demo.js" />
+    <Content Include="Admin\admin_dashboard\src\assets\demo\chart-pie-demo.js" />
+    <Content Include="Admin\admin_dashboard\src\assets\demo\datatables-demo.js" />
+    <Content Include="Admin\admin_dashboard\src\assets\img\error-404-monochrome.svg" />
+    <Content Include="Admin\admin_dashboard\src\js\scripts.js" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="dist\sweetalert2.all.js" />
+    <Content Include="dist\sweetalert2.all.min.js" />
+    <Content Include="dist\sweetalert2.css" />
+    <Content Include="dist\sweetalert2.esm.all.js" />
+    <Content Include="dist\sweetalert2.esm.all.min.js" />
+    <Content Include="dist\sweetalert2.esm.js" />
+    <Content Include="dist\sweetalert2.esm.min.js" />
+    <Content Include="dist\sweetalert2.js" />
+    <Content Include="dist\sweetalert2.min.css" />
+    <Content Include="dist\sweetalert2.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +128,20 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminIndex.aspx.cs">
+      <DependentUpon>AdminIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminIndex.aspx.designer.cs">
+      <DependentUpon>AdminIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_dashboard.Master.cs">
+      <DependentUpon>Admin_dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_dashboard.Master.designer.cs">
+      <DependentUpon>Admin_dashboard.Master</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -104,6 +167,51 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Admin_dashboard.Master" />
+    <Content Include="Admin\admin_dashboard\.browserslistrc" />
+    <Content Include="Admin\admin_dashboard\.travis.yml" />
+    <Content Include="Admin\admin_dashboard\LICENSE" />
+    <Content Include="Admin\admin_dashboard\package-lock.json" />
+    <Content Include="Admin\admin_dashboard\package.json" />
+    <Content Include="Admin\admin_dashboard\README.md" />
+    <Content Include="Admin\admin_dashboard\src\pug\layouts\authentication.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\layouts\dashboard.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\layouts\error.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\layouts\includes\footer.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\layouts\includes\head\css.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\layouts\includes\head\icons.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\layouts\includes\head\meta.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\layouts\includes\head\title.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\layouts\includes\navigation\sidenav.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\layouts\includes\navigation\topnav.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\layouts\includes\scripts.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\401.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\404.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\500.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\charts.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\includes\datatable.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\includes\page-header.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\index.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\layout-sidenav-light.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\layout-static.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\login.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\password.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\register.pug" />
+    <Content Include="Admin\admin_dashboard\src\pug\pages\tables.pug" />
+    <Content Include="Admin\admin_dashboard\src\scss\layout\_authentication.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\layout\_dashboard-default.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\layout\_dashboard-fixed.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\layout\_error.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\navigation\sidenav\_sidenav-dark.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\navigation\sidenav\_sidenav-light.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\navigation\sidenav\_sidenav.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\navigation\_nav.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\navigation\_topnav.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\styles.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\variables\_navigation.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\variables\_spacing.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\_global.scss" />
+    <Content Include="Admin\admin_dashboard\src\scss\_variables.scss" />
     <None Include="packages.config" />
     <Content Include="TMS_Site.Master" />
     <None Include="Web.Debug.config">

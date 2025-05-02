@@ -1,6 +1,24 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TMS_Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="TMS_Project_WebForm.Contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function SuccessContact() {
+            Swal.fire({
+                title: "Success",
+                text: "Form has been Submitted Successfully",
+                icon: "success"
+            });
+        }
+
+        function ErrorContact() {
+            Swal.fire({
+                title: "Failure",
+                text: "Form Insertion Failed",
+                icon: "Error"
+            });
+        }
+    </script>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <!-- ======= Contact Section ======= -->
