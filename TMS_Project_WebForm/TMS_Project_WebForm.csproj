@@ -107,6 +107,7 @@
     <Content Include="Admin\admin_dashboard\src\assets\demo\datatables-demo.js" />
     <Content Include="Admin\admin_dashboard\src\assets\img\error-404-monochrome.svg" />
     <Content Include="Admin\admin_dashboard\src\js\scripts.js" />
+    <Content Include="Admin\Admin_Login.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="dist\sweetalert2.all.js" />
@@ -142,6 +143,13 @@
     </Compile>
     <Compile Include="Admin\Admin_dashboard.Master.designer.cs">
       <DependentUpon>Admin_dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Login.aspx.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Login.aspx.designer.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
